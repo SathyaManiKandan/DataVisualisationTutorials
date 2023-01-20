@@ -1,0 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+   background: linear-gradient(45deg,  #fbda61,#ff5acd); 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.card{
+    background-color: white;
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+    position: relative;
+    transition: 0.5s;
+
+}
+
+.card:hover{
+    height: 350px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.imbox {
+    width: 110px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -30px;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-bottom: 20px;
+
+}
+.imbox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card:hover .imbox{
+     width: 150px;
+     height: 150px;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+   overflow: hidden;
+
+
+}
+
+.container .name{
+    padding: 25px;
+    font-size: medium;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: translateY(110px);
+}
+.container .name .job{
+    font-size: small;
+    margin-top: 20px;
+
+}
+.container .name .data{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 20px auto;
+    gap: 20px;
+    
+}
+
+.container .name .data h4{
+    font: 200;
+   /*  color: red; */
+    opacity: 0.5;
+}
+.container .name .btn{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.container .name .btn .button{
+    padding: 10px;
+    outline: none;
+    border: none;
+    background-color: pink;
+    font-weight: bold;
+    border-radius: 15px;
+
+}
+
+.container .name .btn .button:nth-last-child(1){
+    background-color: gainsboro;
+}
+
+
